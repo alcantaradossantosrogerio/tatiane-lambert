@@ -85,20 +85,43 @@ export default function Location() {
             </div>
           </div>
 
-          {/* Right Column: Google Maps IFrame */}
+          {/* Right Column: Google Maps and Facade */}
           <div className="lg:col-span-7">
-            <div className="relative w-full h-[350px] sm:h-[400px] border border-gold-200/20 rounded-sm overflow-hidden bg-nude-50 shadow-md">
-              {/* Google Maps Embed using exact coordinates or search for Recanto das Minas Gerais */}
-              <iframe
-                title="Google Maps - Consultório Dra. Tatiane Lambert"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3789.9238917830386!2d-50.9255474!3d-17.7943566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935e4d2843dc0333%3A0x6bcfd30a597a9f7!2sR.%20Rio%20Grande%20do%20Sul%2C%20113%20-%20Pq.%20dos%20Buritis%2C%20Rio%20Verde%20-%20GO%2C%2075907-360!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              {/* Map */}
+              <div className="relative w-full h-[300px] sm:h-[380px] border border-gold-200/20 rounded-sm overflow-hidden bg-nude-50 shadow-md">
+                <iframe
+                  title="Google Maps - Consultório Dra. Tatiane Lambert"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3789.9238917830386!2d-50.9255474!3d-17.7943566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935e4d2843dc0333%3A0x6bcfd30a597a9f7!2sR.%20Rio%20Grande%20do%20Sul%2C%20113%20-%20Pq.%20dos%20Buritis%2C%20Rio%20Verde%20-%20GO%2C%2075907-360!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              {/* Facade Image */}
+              <div className="relative w-full h-[300px] sm:h-[380px] border border-gold-200/20 rounded-sm overflow-hidden bg-nude-50 shadow-md group">
+                <img
+                  src="/images/Fachada.png"
+                  alt="Fachada do Consultório Dra. Tatiane Lambert"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-luxury-black/20 to-transparent flex items-end p-6">
+                  <div>
+                    <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold-400 block mb-1">
+                      Espaço Físico
+                    </span>
+                    <p className="font-serif text-sm sm:text-base text-white font-medium">
+                      Fachada do Consultório
+                    </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
