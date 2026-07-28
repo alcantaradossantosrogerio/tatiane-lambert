@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-bodoni), "Bodoni Moda", serif;
+  --font-script: var(--font-pinyon), "Pinyon Script", cursive;
+  --font-sans: var(--font-montserrat), sans-serif;
+  
+  --color-gold-50: #fbf9f6;
+  --color-gold-100: #f4edd4;
+  --color-gold-200: #e8dbb0;
+  --color-gold-300: #d8c284;
+  --color-gold-400: #c9ab5f;
+  --color-gold-500: #b89343;
+  --color-gold-600: #9c7832;
+  --color-gold-700: #7c5c24;
+  --color-gold-800: #5c4217;
+  --color-gold-900: #3c2a0d;
+  
+  --color-nude-50: #fbfaf9;
+  --color-nude-100: #f7f4ef;
+  --color-nude-200: #efebe2;
+  --color-nude-300: #e0d8cc;
+  --color-nude-400: #ccbfb0;
+  --color-nude-500: #b5a492;
+  --color-nude-600: #9c8976;
+  --color-nude-700: #7e6c5c;
+  --color-nude-800: #615246;
+  --color-nude-900: #423830;
+
+  --color-luxury-black: #171614;
+  --color-luxury-charcoal: #2a2926;
+}
+
+body {
+  background-color: var(--color-nude-50);
+  color: var(--color-luxury-black);
+  font-family: var(--font-sans);
+}
+
+.luxury-text-gradient {
+  background: linear-gradient(135deg, #c9ab5f 0%, #b89343 50%, #7c5c24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-border-gradient {
+  border-image: linear-gradient(to right, #c9ab5f, #7c5c24) 1;
+}
+
+/* Custom scrollbar for premium look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-nude-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-300);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-500);
+}
+
